@@ -1,6 +1,10 @@
 @charset "utf-8";
 
-$primary: #e3a10b;
+$primary: rgba(255,152,25,0.7);
+
+html{
+  scroll-behavior: smooth;
+}
 
 .navigation {
   display: flex;
@@ -23,6 +27,44 @@ $primary: #e3a10b;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.main, .location{
+  background-color: rgba(0,134,200, 0.3);
+}
+
+.starters .title, .main .title, .desserts .title, .location .title{
+  text-align: center;
+}
+
+.main .columns{
+  padding-bottom: 80px;
+}
+
+.main .title{
+  padding-top: 40px;
+}
+
+.starters{
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.desserts{
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.location{
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.contact{
+  text-align: center;
+  background-color: #00537A;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 @import "../node_modules/bulma/bulma.sass";
