@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+$primary: #e3a10b;
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 680px) {
+  .navigation {
+    flex-direction: row;
+  }
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@import "../node_modules/bulma/bulma.sass";
